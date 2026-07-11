@@ -1,27 +1,19 @@
-let userName = prompt('tuliskan username anda');
-let usia = 24
-let tinggiBadan = 169.8
-let beratBadan
-let mandi = 0
+//for loop
 
-beratBadan = 86
+//3 statment
 
-if(mandi == null) {
-  mandi = 'belum'
-}else{
-  mandi = 'sudah'
+for(let i = 0; i <= 10; i = i+1) {
+  console.log('heru kurniawan')
 }
 
-let saldoAwal = 100000
-let saldoEwalet = 30000
-let hutangBank = 70000
+const nickName = Symbol("nickName");
 
-const totalSaldo = saldoAwal + saldoEwalet - hutangBank
+let namaGamer = {
+  nama: "heru",
+  [nickName]: "RainbowOne"
+};
 
-alert(
-  `nama kamu ${userName} usia anda ${usia} tinggi badan anda adalah ${tinggiBadan} cm dan berat badan saya ${beratBadan}kg dan saya ${mandi} mandi`
-)
+namaGamer.nickName =  "devilkids";
 
-alert(
-  `saldo awal saya adalah rp.${saldoAwal} tapi di e-walet ada uang rp.${saldoEwalet} tapi ada hutang sebesar ${hutangBank} jadi uang saya ada ${totalSaldo} `
-)
+console.log(namaGamer.nickName);
+console.log(namaGamer[nickName])
