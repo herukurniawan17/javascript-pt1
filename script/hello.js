@@ -1,19 +1,9 @@
-//for loop
 
-//3 statment
 
-for(let i = 0; i <= 10; i = i+1) {
-  console.log('heru kurniawan')
-}
+let fullName = 'Heru kurniawan';
+let age = 24;
+let isStudent = false;
 
-const nickName = Symbol("nickName");
-
-let namaGamer = {
-  nama: "heru",
-  [nickName]: "RainbowOne"
-};
-
-namaGamer.nickName =  "devilkids";
-
-console.log(namaGamer.nickName);
-console.log(namaGamer[nickName])
+document.getElementById("p1").textContent = `add text like this and my name is ${fullName}`;
+document.getElementById("p2").textContent = `and i'm ${age} years old`;
+document.getElementById("p3").textContent = `enroled: ${isStudent}`;
