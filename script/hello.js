@@ -1,8 +1,14 @@
 
-let username;
 
-document.getElementById("my submit").onclick = function(){
-  username = document.getElementById("my text").value;
-  document.getElementById("my h1").textContent = `hello ${username}`
-  console.log(username)
+const PI = 3.14159;
+let radius;
+let circumference;
+
+
+document.getElementById("mySubmit").onclick = function(){
+  radius = document.getElementById("mytext").value;
+  radius = Number(radius);
+  circumference = 2 * PI * radius;
+  document.getElementById("myH3").textContent = circumference + "cm";
 }
+
