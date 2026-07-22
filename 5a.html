@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test </title>
+  </head>
+  <body>
+    <!-- 5h 5i 5j -->
+    <button onclick="
+      cartQuantity += 4;
+      console.log(cartQuantity)    
+    ">+4</button>
+
+    <button onclick="
+      cartQuantity += 5;
+      console.log(cartQuantity);
+    ">+5</button>
+
+    <button onclick="
+      cartQuantity -= 2;
+      console.log(cartQuantity);
+    ">-2</button>
+
+    <button onclick="
+      cartQuantity -= 3;
+      console.log(cartQuantity);
+    ">-3</button>
+
+    <button onclick="
+      cartQuantity --;
+      console.log(cartQuantity);
+    ">Remove from chart</button>
+
+    <script>
+      // essay 5a and 5b
+      const name = 'Heru Kurniawan';
+      console.log(`My name is: ${name}`);
+
+      // 5c
+      const cost = 5 + ( 3 * 2 ) + 9;
+
+      // 5d
+      console.log(`Cost of food: $${cost}`);
+
+      // 5e
+      const tax = cost * 0.1;
+
+      console.log(`Tax (10%): $${tax}`);
+
+      const totalCost = cost + tax ;
+
+      console.log(`Total cost: $${totalCost}`);
+      //karena tadi sudah di bikin tapi ke hapus project quantitynya jadi saya bikin saja lanjutaya 5i dan 5j
+
+      let cartQuantity = 0;
+
+
+    </script>
+  </body>
+</html>
