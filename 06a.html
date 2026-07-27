@@ -7,14 +7,30 @@
 </head>
 <body>
   <script>
-    const age = 65;
-    const isHoliday = true;
+    const flip = Math.random();
+    
+    // let result = '';
+    // if (flip < 0.5 ) {
+    //   result = 'heads';
+    // } else {
+    //   result = 'tails';
+    // }
 
-    if ((age <= 6 || age >= 65) && !isHoliday) {
-      console.log(`Discount`);
-    } else {
-      console.log(`No discount`);
-    }
+    // //My input below
+    // const guess = 'heads';
+
+    // if(guest === result) {
+    //   console.log('you win')
+    // }else {
+    //   console.log('you lose')
+    // }
+
+    const result = flip < 0.5 ? 'heads' : 'tails';
+
+    let quess = 'tails';
+
+    quess === result ? console.log('you win') : console.log('you lose');
+
   </script>
 </body>
 </html>
