@@ -11,57 +11,56 @@
   <p>Rock Paper Scissors</p>
 
   <button onclick="
-    const computerSimple = pickComputerSimple();
-
-    let result = '';
-
-    if (computerSimple === 'rock') {
-      result = 'tie';
-    } else if (computerSimple === 'paper') {
-      result = 'lose';
-    } else if (computerSimple === 'scissors') {
-      result = 'win';
-    }
-
-    alert(`You pick rock, Computer picked ${computerSimple} and You ${result}`);
-
+  playerGuess('rock')
   ">Rock</button>
 
   <button onclick="
-    const computerSimple = pickComputerSimple();
 
-    let result = '';
-
-    if (computerSimple === 'rock') {
-      result = 'win';
-    } else if (computerSimple === 'paper') {
-      result = 'tie';
-    } else if (computerSimple === 'scissors') {
-      result = 'lose';
-    }
-
-    alert(`You pick paper, Computer picked ${computerSimple} and You ${result}`);
-
+    playerGuess('paper')
   ">Paper</button>
 
   <button onclick="
-    const computerSimple = pickComputerSimple();
-
-    let result = '';
-
-    if (computerSimple === 'rock') {
-      result = 'lose';
-    } else if (computerSimple === 'paper') {
-      result = 'win';
-    } else if (computerSimple === 'scissors') {
-      result = 'tie';
-    }
-
-    alert(`You pick scissors, Computer picked ${computerSimple} and You ${result}`);
-
+    
+    playerGuess('scissors')
+   
   ">Scissors</button>
 
   <script>
+    function playerGuess(guess) {
+      const computerSimple = pickComputerSimple();
+      let result = '';
+
+      if (guess === 'scissors') {
+        if (computerSimple === 'rock') {
+          result = 'lose';
+        } else if (computerSimple === 'paper') {
+          result = 'win';
+        } else if (computerSimple === 'scissors') {
+          result = 'tie';
+        }
+
+      }else if (guess === 'paper') {
+        if (computerSimple === 'rock') {
+          result = 'win';
+        } else if (computerSimple === 'paper') {
+          result = 'tie';
+        } else if (computerSimple === 'scissors') {
+          result = 'lose';
+        }
+
+      }else if (guess === 'rock') {
+        if (computerSimple === 'rock') {
+          result = 'tie';
+        } else if (computerSimple === 'paper') {
+          result = 'lose';
+        } else if (computerSimple === 'scissors') {
+          result = 'win';
+        }
+      }
+      
+      alert(`You pick ${guess}, Computer picked ${computerSimple} and You ${result}`);
+
+    }
     
 
     function pickComputerSimple() {
