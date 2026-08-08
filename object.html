@@ -30,27 +30,26 @@
 
     const product1 = {
       name: 'shirt',
-      'delivery-time': '1 day',
-      rating: {
-        stars: 4.5,
-        count: 87
-      },
-
-      fun: function function1 () {
-        console.log('functon inside object');
-      }
-      
+      'delivery-time': '1 day'
     };
 
     console.log(product1);
     console.log(product1.name);
     console.log(product1['name']);
-    console.log(product1['delivery-time']);
+    console.log(product1['delivery-time']);  
+    
+    
+    const nikeSho = {
+      nama: 'air jordan',
+      ukuran: '43',
+      warna: 'putih'
+    };
 
-    console.log(product1.rating.stars);
-    product1.fun();
+    nikeSho.nama = 'pumas';
+    nikeSho.ukuran = '40';
+    nikeSho.warna = 'hitam';
 
-    console.log(JSON.stringify(product1));
+    
 
   </script>
 </body>

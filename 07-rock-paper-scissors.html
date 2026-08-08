@@ -32,13 +32,9 @@
   ">Reset Score</button>
 
   <script>
-    const score = {
-      wins: 0,
-      losses: 0,
-      ties: 0
-    };
+    const score = JSON.parse(localStorage.getItem('ambilNomor'))
 
-    JSON.parse(localStorage.getItem('score'))
+    
 
     function playerGuess(guess) {
       const computerSimple = pickComputerSimple();
@@ -80,7 +76,7 @@
         score.ties += 1;
       }
 
-      localStorage.getItem('score', JSON.stringify(score))
+      localStorage.getItem('ambilNomor', JSON.stringify(score))
       
       alert(`You pick ${guess}, Computer picked ${computerSimple} and You ${result} 
 win : ${score.wins}, loss ${score.losses} tie ${score.ties} `);
