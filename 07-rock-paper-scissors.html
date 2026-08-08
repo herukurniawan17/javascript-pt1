@@ -38,6 +38,8 @@
       ties: 0
     };
 
+    JSON.parse(localStorage.getItem('score'))
+
     function playerGuess(guess) {
       const computerSimple = pickComputerSimple();
       let result = '';
@@ -77,9 +79,11 @@
       }else if (result === 'tie') {
         score.ties += 1;
       }
+
+      localStorage.getItem('score', JSON.stringify(score))
       
       alert(`You pick ${guess}, Computer picked ${computerSimple} and You ${result} 
-win : ${score.wins}, loss ${score.losses} tie ${score.ties}`);
+win : ${score.wins}, loss ${score.losses} tie ${score.ties} `);
     }
     
     function pickComputerSimple() {

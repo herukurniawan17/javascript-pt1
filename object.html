@@ -9,25 +9,49 @@
 
 
   <script>
-    const product = {
-      name: 'socks',
-      price: 1090
+    // const product = {
+    //   name: 'socks',
+    //   price: 1090
+    // };
+
+    // console.log(product);
+    // console.log(product.name);
+
+    // product.name = 'cotton socks';
+    // product.price = 2050;
+
+    // console.log(product);
+
+    // product.sepatu = 5000;
+    // console.log(product);
+
+    // delete product.sepatu;
+    // console.log(product);
+
+    const product1 = {
+      name: 'shirt',
+      'delivery-time': '1 day',
+      rating: {
+        stars: 4.5,
+        count: 87
+      },
+
+      fun: function function1 () {
+        console.log('functon inside object');
+      }
+      
     };
 
-    console.log(product);
-    console.log(product.name);
+    console.log(product1);
+    console.log(product1.name);
+    console.log(product1['name']);
+    console.log(product1['delivery-time']);
 
-    product.name = 'cotton socks';
-    product.price = 2050;
+    console.log(product1.rating.stars);
+    product1.fun();
 
-    console.log(product);
+    console.log(JSON.stringify(product1));
 
-    product.sepatu = 5000;
-    console.log(product);
-
-    delete product.sepatu;
-    console.log(product);
-    
   </script>
 </body>
 </html>
