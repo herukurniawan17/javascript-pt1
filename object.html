@@ -28,29 +28,58 @@
     // delete product.sepatu;
     // console.log(product);
 
+    // const product1 = {
+    //   name: 'shirt',
+    //   'delivery-time': '1 day'
+    // };
+
+    // console.log(product1);
+    // console.log(product1.name);
+    // console.log(product1['name']);
+    // console.log(product1['delivery-time']);  
+    
+    
+    // const nikeSho = {
+    //   nama: 'air jordan',
+    //   ukuran: '43',
+    //   warna: 'putih'
+    // };
+
+    // nikeSho.nama = 'pumas';
+    // nikeSho.ukuran = '40';
+    // nikeSho.warna = 'hitam';
+
+    const amazon = {
+      product: 'baseketball',
+      price: 2095,
+      'delivery-time': '3 days'
+    };
+
+    amazon.price += 500
+
+    console.log(amazon);
+
+    //new line
+
     const product1 = {
-      name: 'shirt',
-      'delivery-time': '1 day'
-    };
+      name: 'sepatu',
+      price: 5000
+    }
 
-    console.log(product1);
-    console.log(product1.name);
-    console.log(product1['name']);
-    console.log(product1['delivery-time']);  
-    
-    
-    const nikeSho = {
-      nama: 'air jordan',
-      ukuran: '43',
-      warna: 'putih'
-    };
+    const product2 = {
+      name: 'kaos',
+      price: 2000
+    }
 
-    nikeSho.nama = 'pumas';
-    nikeSho.ukuran = '40';
-    nikeSho.warna = 'hitam';
+    function comparePrice(product1, product2) {
+      if (product1.price < product2.price) {
+        return product1;
+      } else {
+        return product2;
+      }
+    }
 
-    
-
+    console.log(comparePrice(product1, product2));
   </script>
 </body>
 </html>
