@@ -6,21 +6,32 @@
 // console.log(count)
 
  
-function increment() {
-  console.log("the button was clicked")
-}
+// function increment() {
+//   console.log("the button was clicked")
+// }
  
-function sixSeven() {
-  console.log(42)
-}
-sixSeven()
+// function sixSeven() {
+//   console.log(42)
+// }
+// sixSeven()
 
-let lap1 = 34
-let lap2 = 33
-let lap3 = 36
+// let lap1 = 34
+// let lap2 = 33
+// let lap3 = 36
 
-function lap() {
-  let totalLap = lap1 + lap2 + lap3
-  console.log(totalLap)
+// function lap() {
+//   let totalLap = lap1 + lap2 + lap3
+//   console.log(totalLap)
+// }
+// lap()
+
+let lapsCompleted = 0
+
+function incresmentLap() {
+  lapsCompleted += 1
 }
-lap()
+incresmentLap()
+incresmentLap()
+incresmentLap()
+
+console.log(lapsCompleted)
