@@ -26,8 +26,15 @@ button {
   width: 200px;
   margin-bottom: 5px;
   border-radius: 5px;
+  display: block;
+  margin: auto;
 }
 
 #increment-btn {
   background: darkred;
+}
+
+#save-btn {
+  margin-top: 5px;
+  background: green;
 }
