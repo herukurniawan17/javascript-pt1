@@ -11,3 +11,12 @@ function increment() {
 function save() {
   console.log(count)
 }
+
+// test
+
+let name = 'heru'
+let greeting = 'Hi, my name is '
+
+let myGreeting = greeting + name;
+
+console.log(myGreeting);
