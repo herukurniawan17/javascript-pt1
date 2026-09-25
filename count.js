@@ -1,5 +1,6 @@
  // document.getElementById("count-el").innerText = 5
 
+let saveEl = document.getElementById("save-el")
 let countEl = document.getElementById("count-el") //pass in argument
 let count = 0 
 
@@ -9,14 +10,10 @@ function increment() {
 }
 
 function save() {
-  console.log(count)
+  let countSt = count + " - "
+  saveEl.textContent += countSt
+  countEl.textContent = 0
+  count = 0
 }
 
 // test
-
-let name = 'heru'
-let greeting = 'Hi, my name is '
-
-let myGreeting = greeting + name;
-
-console.log(myGreeting);
